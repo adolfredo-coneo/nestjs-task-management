@@ -1,0 +1,22 @@
+nestjs
+
+//Init Project
+yarn global add @nestjs/cli
+nest new nestjs-task-management
+
+//modules
+nest g module tasks
+
+//controllers
+nest g controller tasks --no-spec
+
+//services
+nest g service tasks --no-spec
+
+//git
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/adolfredo-coneo/nestjs-task-management.git
+git push -u origin main
