@@ -13,6 +13,9 @@ nest g controller tasks --no-spec
 //services
 nest g service tasks --no-spec
 
+//uuid
+yarn add uuid
+
 //git
 git init
 git add .
