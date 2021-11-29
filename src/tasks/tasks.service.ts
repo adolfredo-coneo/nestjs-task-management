@@ -29,4 +29,20 @@ export class TasksService {
 
     return task;
   }
+
+  deleteTask(id: string): void {
+    const takskIndex = this.tasks.findIndex((task) => task.id === id);
+    if (takskIndex > -1) {
+      this.tasks.splice(takskIndex, 1);
+    }
+  }
+
+  updateTaskStatus(id: string, status: TaskStatus): Task {
+    const task = this.getTaskById(id);
+    if (task) {
+      task.status = status;
+
+      return task;
+    }
+  }
 }
