@@ -16,6 +16,9 @@ nest g service tasks --no-spec
 //uuid
 yarn add uuid
 
+//validators
+yarn add class-validator class-transformer
+
 //git
 git init
 git add .
