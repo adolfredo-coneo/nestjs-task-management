@@ -15,9 +15,19 @@ nest g service tasks --no-spec
 
 //uuid
 yarn add uuid
+yarn remove uuid
 
 //validators
 yarn add class-validator class-transformer
+
+//Docker
+docker run --name postgres-nest -p 5432:5432 -e POSTGRES_PASSWORD=postgres -d postgres
+docker container ls
+docker container stop postgres-nest
+docker container rm postgres-nest
+
+//typeORM Postgres
+yarn add typeorm @nestjs/typeorm pg
 
 //git
 git init
