@@ -23,6 +23,14 @@ yarn remove uuid
 //validators
 yarn add class-validator class-transformer
 
+//bcrypt
+yarn add bcrypt
+yarn add -D @types/bcrypt
+
+//jwt
+yarn add @nestjs/jwt @nestjs/passport passport passport-jwt
+yarn add -D @types/passport-jwt
+
 //Docker
 docker run --name postgres-nest -p 5432:5432 -e POSTGRES_PASSWORD=postgres -d postgres
 docker container ls
