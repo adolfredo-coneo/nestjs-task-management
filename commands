@@ -6,12 +6,15 @@ nest new nestjs-task-management
 
 //modules
 nest g module tasks
-
-//controllers
-nest g controller tasks --no-spec
+nest g module auth
 
 //services
 nest g service tasks --no-spec
+nest g service auth --no-spec
+
+//controllers
+nest g controller tasks --no-spec
+nest g controller auth --no-spec
 
 //uuid
 yarn add uuid
