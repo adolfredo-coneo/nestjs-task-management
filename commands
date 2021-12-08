@@ -40,6 +40,9 @@ docker container rm postgres-nest
 //typeORM Postgres
 yarn add typeorm @nestjs/typeorm pg
 
+//config
+yarn add @nestjs/config
+
 //git
 git init
 git add .
