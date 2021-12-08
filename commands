@@ -43,6 +43,10 @@ yarn add typeorm @nestjs/typeorm pg
 //config
 yarn add @nestjs/config
 
+//hapi
+yarn add @hapi/joi
+yarn add -D @types/hapi__joi
+
 //git
 git init
 git add .
